@@ -7,30 +7,32 @@ html {
 }
 
 .container1 {
-    height: 1050px;
+    height: 100%;
     background-color: blanchedalmond;
     border: 1px solid #000;
     display:flex;
-
+    justify-content:flex-start;
     flex-direction: column;
-
+    align-content: flex-start;
 }
 
 .container2 {
-    height: 300px;
+    height: 100%;
     background-color: blanchedalmond;
     border: 1px solid #000;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
+    flex-direction: column;
     align-content: flex-start;
 }
 
 .container3 {
-    height: 300px;
+    height: 100%;
     background-color: blanchedalmond;
     border: 1px solid #000;
     display:flex;
-    justify-content:flex-end;
+    flex-direction: column;
+    justify-content:flex-start;
     align-content: flex-start;
 }
 
@@ -51,13 +53,97 @@ html {
 .contido:hover {
     background-color: brown;
     color: #000;
-    font-size: 16pt;
+    font-size: 20pt;
     width: 1000px;
 }
 
-.container1:nth-of-type(3) {
+.container1 div:nth-of-type(1) {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    height: 1500px;
+    justify-content: flex-start;
+    flex-direction:row;
+    height: 110px;
+}
+
+.container1 div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    height: 110px;
+}
+
+.container1 div:nth-of-type(3) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 110px;
+}
+
+.container1 div:nth-of-type(4) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    height: 110px;
+}
+
+.container1 div:nth-of-type(5) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: initial;
+    height: 110px;
+}
+
+.container1 div:nth-of-type(6) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: inherit;
+    height: 110px;
+}
+
+.container2 div:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(2) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(3) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(4) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(5) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(6) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(7) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
+}
+.container2 div:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 110px;
 }
