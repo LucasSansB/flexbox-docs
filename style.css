@@ -38,7 +38,7 @@ html {
 
 .contido {
     width: 200px;
-    height: 110px;
+    height: 510px;
     background-color: aquamarine;
     border: 1px solid #000;
     border-radius: 15px;
@@ -48,6 +48,7 @@ html {
     justify-content: space-evenly;
     align-items: center;
     margin: 10px 0 10px 0;
+    
 }
 
 .contido:hover {
@@ -57,141 +58,151 @@ html {
     width: 1000px;
 }
 
+pre {
+    quotes: "<" ">";
+}
+
 .container1 div:nth-of-type(1) {
     display: flex;
     justify-content: flex-start;
     flex-direction:row;
-    height: 110px;
+    height: 220px;
 }
 
 .container1 div:nth-of-type(2) {
     display: flex;
     justify-content: flex-start;
     flex-direction: row-reverse;
-    height: 110px;
+    height: 220px;
 }
 
 .container1 div:nth-of-type(3) {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: 110px;
+    height: 220px;
 }
 
 .container1 div:nth-of-type(4) {
     display: flex;
     justify-content: flex-start;
     flex-direction: column-reverse;
-    height: 110px;
+    height: 220px;
 }
 
 .container1 div:nth-of-type(5) {
     display: flex;
     justify-content: flex-start;
     flex-direction: initial;
-    height: 110px;
+    height: 220px;
 }
 
 .container1 div:nth-of-type(6) {
     display: flex;
     justify-content: flex-start;
     flex-direction: inherit;
-    height: 110px;
+    height: 220px;
 }
 
 .container2 div:nth-of-type(1) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(2) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(3) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(4) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(5) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(6) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container2 div:nth-of-type(7) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
+}
+.container2 div:nth-of-type(8) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: flex-start;
+    height: 220px;
 }
 .container3 div:nth-of-type(1) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(2) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(3) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(4) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(5) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(6) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(7) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(8) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
 .container3 div:nth-of-type(9) {
     display: flex;
     justify-content: flex-start;
     flex-direction: flex-start;
-    height: 110px;
+    height: 220px;
 }
