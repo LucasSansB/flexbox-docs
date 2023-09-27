@@ -6,38 +6,65 @@ html {
     scroll-behavior: smooth; /* comportamento-da-rolagem: suave */
 }
 
+.cont1 {
+    height: 100%;
+    background-color: rebeccapurple;
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont2 {
+    height: 100%;
+    background-color: rebeccapurple;
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont3 {
+    height: 100%;
+    background-color: rebeccapurple;
+    border: 3px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container1 {
     height: 100%;
-    background-color: blanchedalmond;
-    border: 1px solid #000;
     display:flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    align-content: flex-start;
+    justify-content:space-between;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .container2 {
     height: 100%;
-    background-color: blanchedalmond;
-    border: 1px solid #000;
     display:flex;
-    justify-content:flex-start;
-    flex-direction: column;
-    align-content: flex-start;
+    justify-content:space-between;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .container3 {
     height: 100%;
-    background-color: blanchedalmond;
-    border: 1px solid #000;
     display:flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-content: flex-start;
+    flex-direction: row;
+    justify-content:space-between;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .contido {
-    width: 200px;
+    width: 35%;
     height: 510px;
     background-color: aquamarine;
     border: 1px solid #000;
@@ -55,11 +82,28 @@ html {
     background-color: brown;
     color: #000;
     font-size: 20pt;
-    width: 1000px;
+    width: 60%;
+}
+
+.titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 pre {
     quotes: "<" ">";
+    font-size: 8pt;
+}
+
+h4 {
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+    font-size: 14pt;
+
 }
 
 .container1 div:nth-of-type(1) {
