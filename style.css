@@ -65,7 +65,7 @@ html {
 
 .contido {
     width: 35%;
-    height: 510px;
+    height: 800px;
     background-color: aquamarine;
     border: 1px solid #000;
     border-radius: 15px;
@@ -83,6 +83,7 @@ html {
     color: #000;
     font-size: 20pt;
     width: 60%;
+    height: 110%;
 }
 
 .titulo {
@@ -94,8 +95,7 @@ html {
 }
 
 pre {
-    quotes: "<" ">";
-    font-size: 8pt;
+    font-size: 11pt;
 }
 
 h4 {
