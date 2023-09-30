@@ -1,0 +1,98 @@
+:root {
+    --primeiro: #FF0018;
+    --segundo: #FFA52C;
+    --terceiro: #FFFF41;
+    --quarto: #008018;
+    --quinto: #0000F9;
+    --sexto: #86007D;
+}
+
+html {
+    scroll-behavior: smooth; /* comportamento-da-rolagem: suave */
+}
+pre {
+    margin: 0;
+}
+.primario {
+    height: 100%;
+    width: 1100px;
+    background-color: blue;
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.secundario1{ 
+    height: 750px;
+    width: 800px;
+    background-color:brown;
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.terciario {
+    height: 100px;
+    width: 750px;
+    background-color:aquamarine;
+    flex-wrap: wrap;
+}
+.contem {
+    height: 100px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contem:hover{
+    height: 110px;
+    background-image: url(./shrek.png);
+    background-position: center;
+}
+
+.secundario1 div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    
+}
+/* .secundario .terciario:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.secundario .terciario:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start
+} */
+
+/* .terciario div:nth-child(1){
+    background-color: var(--primeiro);
+} */
+.terciario div:nth-child(2) {
+    background-color: var(--segundo);
+}
+.terciario div:nth-child(3) {
+    background-color: var(--terceiro);
+}
+.terciario div:nth-child(4) {
+    background-color: var(--quarto);
+}
+.terciario div:nth-child(5) {
+    background-color: var(--quinto);
+}
+.terciario div:nth-child(6) {
+    background-color: var(--sexto);
+}
+/* .contem :hover { 
+    background-image: url(./shrek.png);
+    width: 120px;
+    color: #fff;
+} */
+    
