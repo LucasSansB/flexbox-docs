@@ -4,240 +4,1159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox - Documentação</title>
     <link rel="stylesheet" href="./style.css">
+    <title>Teste flex-box</title>
 </head>
 <body>
-    <header>
-        <h1>Flexbox</h1>
-        <h2>Documentação</h2>
-        <h3>display: flex</h3>
-        <p class="desc-propri">
-            A primeira propriedade que precisa ser declarada para que o Flexbox funciona
-        </p>
-        <p class="desc-propri">Algumas propriedades com flex-direction, justify-content e align-content já vem com os valores padrão.</p>
-
-        <!-- table>(tr>th.propriedade+th.valor)+tr*3>td.propriedade+td.valor -->
-        
-        <table>
-            <tr>
-                <th class="propriedade">Propriedades</th>
-                <th class="valor">Valor Padrão</th>
-            </tr>
-            <tr>
-                <td class="propriedade">flex-direction</td>
-                <td class="valor">row</td>
-            </tr>
-            <tr>
-                <td class="propriedade">justify-content</td>
-                <td class="valor">flex-start</td>
-            </tr>
-            <tr>
-                <td class="propriedade">align-content</td>
-                <td class="valor">flex-start</td>
-            </tr>
-        </table>
-    </header>
-    <div class="cont1">
-        <p>Exemplos sobre ''</p>
-        <div class="titulo">
-            <h2>row | row-reverse | column | column-reverse | initial | inherit</h2>
-        </div>
-        <div class="container1">
-            <div class="contido">
-            <pre>
-                <h2>row</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-            </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>row-reverse</h2>
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>column</h2>
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>column-reverse</h2>
-.container {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>initial</h2>
-.container {
-    display: flex;
-    flex-direction: initial;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>inherit</h2>
-.container {
-    display: flex;
-    flex-direction: inherit;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-                </pre>
+    <header></header>
+    <div class="primario">
+        <h1 class="titulo">flex-direction</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario row">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
         </div>
-    </div>
-    <div class="cont2">
-        <div class="titulo">
-            <h2>flex-start | flex-end | center | space-between | space-around | space-evenly | initial | inherit </h2>
-        </div>
-        <div class="container2">
-            <div class="contido">
-                <pre>
-                    <h2>flex-start</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start
-}
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>flex-end</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>center</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>space-between</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                <h2>space-around</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>space-evenly</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>initial</h2>
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: initial;
-    align-content: flex-start
-}
-                </pre>
-            </div>
-            <div class="contido">
-                <pre>
-                    <h2>inherit</h2>
-.container {                            
-    display: flex;
-    flex-direction: row;
-    justify-content: inherit;
-    align-content: flex-start   
-}
-                </pre>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row-reverse</span></pre></h2>
+                <p class="descricao">Same as row, but in reverse order</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row-reverse</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario row-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
         </div>
-    </div>
-    <div class="cont3">
-        <div class="titulo">
-            <h2>stretch | center | flex-start | flex-end | space-between | space-around | space-evenly | initial | inherit</h2>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario column">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+            </div>
         </div>
-        <div class="container3">
-            <div class="contido">
-                <h2>stretch</h2>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column-reverse</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column-reverse</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario column-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>center</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">initial</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">initial</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario flex-direction-initial">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>flex-start</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">inherit</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">inherit</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario flex-direction-inherit">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>flex-end</h2>
+        </div>
+        <h1 class="titulo"> justify-content</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span></pre></h2>
+                <p class="descricao">Default value. Items are positioned at the beginning of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario flex-start">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>space-between</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-end</span></pre></h2>
+                <p class="descricao">Items are positioned at the end of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-end</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario flex-end">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>space-around</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">center</span></pre></h2>
+                <p class="descricao">Items are positioned in the center of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">center</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario center">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
             </div>
-            <div class="contido">
-                <h2>space-evenly</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-between</span></pre></h2>
+                <p class="descricao">Items will have space between them</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-between</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario space-between">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
             </div>
-            <div class="contido">
-                <h2>initial</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-around</span></pre></h2>
+                <p class="descricao">Items will have space before, between, and after them</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-around</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario space-around">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
             </div>
-            <div class="contido">
-                <h2>inherit</h2>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-evenly</span></pre></h2>
+                <p class="descricao">Items will have equal space around them</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">space-evenly</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario space-evenly">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
             </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">initial</span></pre></h2>
+                <p class="descricao">Sets this property to its default value.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">initial</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario justify-initial">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">inherit</span></pre></h2>
+                <p class="descricao">Inherits this property from its parent element.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">inherit</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario justify-inherit">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+            </div>
+        </div>
+        <h1 class="titulo">align-items</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">normal</span></pre></h2>
+                <p class="descricao">Default. Behaves like 'stretch' for flexbox and grid items, or 'start' for grid items with a defined block size.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">normal</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-normal">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">stretch</span></pre></h2>
+                <p class="descricao">Items are stretched to fit the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">stretch</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-stretch">
+                <div class="contem-ais">1</div>
+                <div class="contem-ais">2</div>
+                <div class="contem-ais">3</div>
+                <div class="contem-ais">4</div>
+                <div class="contem-ais">5</div>
+                <div class="contem-ais">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">center</span></pre></h2>
+                <p class="descricao">Items are positioned at the center of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">center</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-center">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">flex-start</span></pre></h2>
+                <p class="descricao">Items are positioned at the beginning of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-flex-start">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">flex-end</span></pre></h2>
+                <p class="descricao">Items are positioned at the end of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">flex-end</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-flex-end">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">start</span></pre></h2>
+                <p class="descricao">Items are positioned at the beginning of their individual grid cells, in the block direction</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-start">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">end</span></pre></h2>
+                <p class="descricao">Items are positioned at the end of the their individual grid cells, in the block direction</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">end</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-end">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">baseline</span></pre></h2>
+                <p class="descricao">Items are positioned at the baseline of the container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">baseline</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-baseline">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">initial</span></pre></h2>
+                <p class="descricao">Sets this property to its default value.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">initial</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-initial">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">inherit</span></pre></h2>
+                <p class="descricao">Inherits this property from its parent element.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">inherit</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-items-inherit">
+                <div class="contem-ai">1</div>
+                <div class="contem-ai">2</div>
+                <div class="contem-ai">3</div>
+                <div class="contem-ai">4</div>
+                <div class="contem-ai">5</div>
+                <div class="contem-ai">6</div>
+            </div>
+        </div>
+        <h1 class="titulo">align-content</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">stretch</span></pre></h2>
+                <p class="descricao">Default value. Lines stretch to take up the remaining space</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">stretch</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-stretch">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">center</span></pre></h2>
+                <p class="descricao">Lines are packed toward the center of the flex container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">center</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-center">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">flex-start</span></pre></h2>
+                <p class="descricao">Lines are packed toward the start of the flex container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-flex-start">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">flex-end</span></pre></h2>
+                <p class="descricao">Lines are packed toward the end of the flex container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">flex-end</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-flex-end">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-between</span></pre></h2>
+                <p class="descricao">Lines are evenly distributed in the flex container</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-between</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-space-between">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-around</span></pre></h2>
+                <p class="descricao">Lines are evenly distributed in the flex container, with half-size spaces on either end</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-around</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-space-around">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-evenly</span></pre></h2>
+                <p class="descricao">Lines are evenly distributed in the flex container, with equal space around them</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">space-evenly</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-space-evenly">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">initial</span></pre></h2>
+                <p class="descricao">Sets this property to its default value.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">initial</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-initial">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+                <div class="contem-ac">5</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">inherit</span></pre></h2>
+                <p class="descricao">Default value. The flexible items are displayed horizontally, as a row</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">inherit</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario align-content-inherit">
+                <div class="contem-ac">1</div>
+                <div class="contem-ac">2</div>
+                <div class="contem-ac">3</div>
+                <div class="contem-ac">4</div>
+                <div class="contem-ac">5</div>
+            </div>
+        </div>
+        <h1 class="titulo">flex-wrap</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">nowrap</span></pre></h2>
+                <p class="descricao">Default value. Specifies that the flexible items will not wrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">nowrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-fw flex-wrap-nowrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">wrap</span></pre></h2>
+                <p class="descricao">Specifies that the flexible items will wrap if necessary</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">wrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-fw flex-wrap-wrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">wrap-reverse</span></pre></h2>
+                <p class="descricao">Specifies that the flexible items will wrap, if necessary, in reverse order</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">wrap-reverse</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-fw flex-wrap-wrap-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">initial</span></pre></h2>
+                <p class="descricao">Sets this property to its default value.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">initial</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-fw flex-wrap-initial">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">inherit</span></pre></h2>
+                <p class="descricao">Inherits this property from its parent element.</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">column</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">inherit</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-fw flex-wrap-inherit">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <h1 class="titulo">flex-flow</h1>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row nowrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row and nowrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row nowrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-nowrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row wrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row and wrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row wrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-wrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row wrap-reverse</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row and wrap-reverse</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row wrap-reverse</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-wrap-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse nowrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row-reverse and nowrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse nowrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-reverse-nowrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse wrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row-reverse and wrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse wrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-reverse-wrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse wrap-reverse</span></pre></h2>
+                <p class="descricao">Junction of the two properties: row-reverse and wrap-reverse</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row-reverse wrap-reverse</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff row-reverse-wrap-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column nowrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column and nowrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column nowrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-nowrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column wrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column and wrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column wrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-wrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column wrap-reverse</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column and wrap-reverse</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column wrap-reverse</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-wrap-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse nowrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column-reverse and nowrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse nowrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-reverse-nowrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse wrap</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column-reverse and wrap</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse wrap</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-reverse-wrap">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario">
+            <section>
+                <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse wrap-reverse</span></pre></h2>
+                <p class="descricao">Junction of the two properties: column-reverse and wrap-reverse</p>
+                <code>
+                    <span class="ponto">CSS</span>
+                    <pre><span class="nome">.container</span><span class="ponto">{</span></pre>
+                        <pre>   <span class="propriedade">display</span><span class="ponto">:</span><span class="valor">flex</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span><span class="ponto">;</span></pre>
+                        <pre>   <span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">column-reverse wrap-reverse</span><span class="ponto">;</span></pre>
+                    <pre><span class="ponto">}</span></pre>
+                </code>
+            </section>
+            <div class="terciario-ff column-reverse-wrap-reverse">
+                <div class="contem">1</div>
+                <div class="contem">2</div>
+                <div class="contem">3</div>
+                <div class="contem">4</div>
+                <div class="contem">5</div>
+                <div class="contem">6</div>
+                <div class="contem">7</div>
+                <div class="contem">8</div>
+            </div>
+        </div>
+        <div class="secundario-m">
+            <div class="terciario-m">?</div>
         </div>
     </div>
 </body>
