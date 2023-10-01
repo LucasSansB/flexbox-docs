@@ -5,94 +5,441 @@
     --quarto: #008018;
     --quinto: #0000F9;
     --sexto: #86007D;
-}
-
+    --setimo: #ffffff;
+    --oitavo: #000000;
+    --cor-nome: #bae0a3;
+    --cor-propriedade: #5395fd;
+    --cor-valor: #d97171;
+    --cor-ponto: #ffffff;
+    --fundo-code: #20273c;
+    --cor-primairo: #1b1b1b;
+    --cor-secundario: #000000;
+    --cor-terciario: #1b1b1b;
+} /* Cores */
 html {
-    scroll-behavior: smooth; /* comportamento-da-rolagem: suave */
-}
-pre {
+    scroll-behavior: smooth;
+} /* comportamento-da-rolagem: suave */
+pre{
     margin: 0;
 }
+h1{
+    color: var(--cor-nome);
+}
+h2 {
+    color: var(--cor-propriedade);
+}
+section {
+    padding-bottom: 20px;
+}
+.descricao{
+    color: var(--cor-valor);
+    font-family: monospace;
+    font-size: 16px;
+}
+.nome{
+    color: var(--cor-nome);
+}
+.propriedade{
+    color: var(--cor-propriedade);
+}
+.valor{
+    color: var(--cor-valor);
+}
+.ponto{
+    color: var(--cor-ponto);
+}
+code{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    row-gap: 7px;
+    border-radius: 10px;
+    font-family: monospace;
+    background-color: var(--fundo-code);
+}
+
+/* Propriedades e valores da div's principais */
 .primario {
     height: 100%;
-    width: 1100px;
-    background-color: blue;
-    border: 3px solid green;
+    width: 100%;
+    padding-bottom: 25px;
+    background-color: var(--cor-primairo);
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
 }
-.secundario1{ 
-    height: 750px;
+.secundario{
+    height: 100%;
     width: 800px;
-    background-color:brown;
-    border: 3px solid green;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    padding: 15px 20px;
+    margin: 10px 0 0 10px;
+    background-color: var(--cor-secundario);
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    align-items: center;
 }
 .terciario {
-    height: 100px;
-    width: 750px;
-    background-color:aquamarine;
-    flex-wrap: wrap;
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    background-color: var(--cor-terciario);
 }
-.contem {
+.terciario-fw{
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    background-color: var(--cor-terciario);
+}
+.terciario-ff {
+    height: 200px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    background-color: var(--cor-terciario);
+}
+
+/* Cor de todos os quadrados */
+.terciario div:nth-child(1){
+    background-color: var(--primeiro);
+}
+.terciario div:nth-child(2){
+    background-color: var(--segundo);
+}
+.terciario div:nth-child(3){
+    background-color: var(--terceiro);
+}
+.terciario div:nth-child(4){
+    background-color: var(--quarto);
+}
+.terciario div:nth-child(5){
+    background-color: var(--quinto);
+}
+.terciario div:nth-child(6){
+    background-color: var(--sexto);
+}
+.terciario div:nth-child(7){
+    background-color: var(--setimo);
+}
+.terciario div:nth-child(8){
+    background-color: var(--oitavo);
+    color: var(--cor-ponto);
+}
+.terciario-fw div:nth-child(1){
+    background-color: var(--primeiro);
+}
+.terciario-fw div:nth-child(2){
+    background-color: var(--segundo);
+}
+.terciario-fw div:nth-child(3){
+    background-color: var(--terceiro);
+}
+.terciario-fw div:nth-child(4){
+    background-color: var(--quarto);
+}
+.terciario-fw div:nth-child(5){
+    background-color: var(--quinto);
+}
+.terciario-fw div:nth-child(6){
+    background-color: var(--sexto);
+}
+.terciario-fw div:nth-child(7){
+    background-color: var(--setimo);
+}
+.terciario-fw div:nth-child(8){
+    background-color: var(--oitavo);
+    color: var(--cor-ponto);
+}
+.terciario-ff div:nth-child(1){
+    background-color: var(--primeiro);
+}
+.terciario-ff div:nth-child(2){
+    background-color: var(--segundo);
+}
+.terciario-ff div:nth-child(3){
+    background-color: var(--terceiro);
+}
+.terciario-ff div:nth-child(4){
+    background-color: var(--quarto);
+}
+.terciario-ff div:nth-child(5){
+    background-color: var(--quinto);
+}
+.terciario-ff div:nth-child(6){
+    background-color: var(--sexto);
+}
+.terciario-ff div:nth-child(7){
+    background-color: var(--setimo);
+}
+.terciario-ff div:nth-child(8){
+    background-color: var(--oitavo);
+    color: var(--cor-ponto);
+}
+
+/* Valores de todos quadrados */
+.contem-ai:nth-of-type(odd){
     height: 100px;
-    width: 110px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contem-ai:nth-of-type(even){
+    height: 200px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contem-ais{
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.contem-ac{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contem{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contem:hover{
-    height: 110px;
-    background-image: url(./shrek.png);
-    background-position: center;
-}
-
-.secundario1 div:nth-child(1){
-    display: flex;
+/* As propriedades e valores de item da Flexbox */
+.row{
     flex-direction: row;
-    justify-content: flex-start;
-    align-content: flex-start;
-    
 }
-/* .secundario .terciario:nth-child(2){
-    display: flex;
-    justify-content: flex-start;
+.row-reverse{
     flex-direction: row-reverse;
 }
-.secundario .terciario:nth-child(3){
-    display: flex;
-    flex-direction: row;
+.column{
+    flex-direction: column;
+}
+.column-reverse{
+    flex-direction: column-reverse;
+}
+.flex-direction-initial{
+    flex-direction: initial;
+}
+.flex-direction-inherit{
+    flex-direction: inherit;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.space-around{
     justify-content: space-around;
-    align-content: flex-start
-} */
+}
+.space-evenly{
+    justify-content: space-evenly;
+}
+.justify-content-initial{
+    justify-content: initial;
+}
+.justify-content-inherit{
+    justify-content: inherit;
+}
+.align-items-normal{
+    align-items: normal;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+.align-items-center{
+    align-items: center;
+}
+.align-items-flex-start{
+    align-items: flex-start;
+}
+.align-items-flex-end{
+    align-items: flex-end;
+}
+.align-items-start{
+    align-items: start;
+}
+.align-items-end{
+    align-items: end;
+}
+.align-items-baseline{
+    align-items: baseline;
+}
+.align-items-initial{
+    align-items: initial;
+}
+.align-items-inherit{
+    align-items: inherit;
+}
+.align-content-stretch{
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-center{
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-flex-start{
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-flex-end{
+    align-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-space-between{
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-space-around{
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-space-evenly{
+    align-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-initial{
+    align-content: initial;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.align-content-inherit{
+    align-content: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-wrap-nowrap{
+    flex-wrap: nowrap;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+.flex-wrap-wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+.flex-wrap-initial{
+    flex-wrap: initial;
+}
+.flex-wrap-inherit{
+    flex-wrap: inherit;
+}
+.row-nowrap{
+    flex-flow: row nowrap;
+}
+.row-wrap{
+    flex-flow: row wrap;
+}
+.row-wrap-reverse{
+    flex-flow: row wrap-reverse;
+}
+.row-reverse-nowrap{
+    flex-flow: row-reverse nowrap;
+}
+.row-reverse-wrap{
+    flex-flow: row-reverse wrap;
+}
+.row-reverse-wrap-reverse{
+    flex-flow: row-reverse wrap-reverse;
+}
+.column-nowrap{
+    flex-flow: column nowrap;
+}
+.column-wrap{
+    flex-flow: column wrap;
+}
+.column-wrap-reverse{
+    flex-flow: column wrap-reverse;
+}
+.column-reverse-nowrap{
+    flex-flow: column-reverse nowrap;
+}
+.column-reverse-wrap{
+    flex-flow: column-reverse wrap;
+}
+.column-reverse-wrap-reverse{
+    flex-flow: column-reverse wrap-reverse;
+}
 
-/* .terciario div:nth-child(1){
-    background-color: var(--primeiro);
-} */
-.terciario div:nth-child(2) {
-    background-color: var(--segundo);
-}
-.terciario div:nth-child(3) {
-    background-color: var(--terceiro);
-}
-.terciario div:nth-child(4) {
-    background-color: var(--quarto);
-}
-.terciario div:nth-child(5) {
-    background-color: var(--quinto);
-}
-.terciario div:nth-child(6) {
-    background-color: var(--sexto);
-}
-/* .contem :hover { 
+/* hover das div */
+.contem:hover {
     background-image: url(./shrek.png);
-    width: 120px;
-    color: #fff;
-} */
-    
+    background-position: center;
+    color: transparent
+}
+.contem-ai:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    color: transparent
+}
+.contem-ais:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    color: transparent
+}
+.contem-ac:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    color: transparent
+}
+
+.secundario-m{
+    height: 100%;
+    width: 800px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    padding: 15px 20px;
+    margin: 10px 0 0 10px;
+    background-color: var(--cor-secundario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.terciario-m{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-terciario);
+    font-size: 150px;
+    color: var(--cor-ponto)
+}
+.terciario-m:hover{
+    width: 750px;
+    height: 500px;
+    background-image: url(./shrek.png);
+    background-position: center;
+    color: transparent
+}
