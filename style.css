@@ -21,11 +21,79 @@ html {
     background-color: var(--cor-primairo);
     margin: 0;
 } /* comportamento-da-rolagem: suave */
+
+/*botão para retornor ao topo*/
+.btnSupEsquerdo{
+	position: fixed;
+	float: top;
+	bottom: 10%;
+	right: 8%;
+	z-index: 100;
+}
+.btnPesquisarInput, .btnPesquisarBtn , .btnMaisBotoesBtn, .btnMaisBotoesGrupo{
+	display: inline-block;
+}
+.btnCircular{
+	border-radius: 10px;
+    background-color: var(--primeiro);
+    color: #000000;
+}
+.btnPrincipal{
+	font-size: 100%;
+	padding: 13px;
+    scroll-behavior: smooth;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 15px;
+}
+.menu h1{
+    font-size: 35px;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+    align-content: space-evenly;
+    justify-content: center;
+}
+.botoes h2{
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--fundo-code);
+}
+.botoes h2:hover{
+    background-color: var(--cor-terciario);
+    opacity: 75%;
+}
+.botoes a{
+    color: var(--cor-propriedade);
+
+    margin: 5px
+}
+.botoes a:hover{
+    color: var(--cor-valor);
+}
 pre{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: initial;
+    cursor: initial;
+}
 h1{
-    color: var(--cor-nome);
+    color: var(--cor-ponto);
+    font-family: monospace;
 }
 h2 {
     color: var(--cor-propriedade);
@@ -129,7 +197,7 @@ code{
 }
 .terciario div:nth-child(8){
     background-color: var(--oitavo);
-    color: var(--cor-ponto);
+    color: #ffffff;
 }
 .terciario-fw div:nth-child(1){
     background-color: var(--primeiro);
@@ -154,7 +222,7 @@ code{
 }
 .terciario-fw div:nth-child(8){
     background-color: var(--oitavo);
-    color: var(--cor-ponto);
+    color: #ffffff;
 }
 .terciario-ff div:nth-child(1){
     background-color: var(--primeiro);
@@ -179,7 +247,7 @@ code{
 }
 .terciario-ff div:nth-child(8){
     background-color: var(--oitavo);
-    color: var(--cor-ponto);
+    color: #ffffff;
 }
 
 /* Valores de todos quadrados */
@@ -221,6 +289,124 @@ code{
     justify-content: center;
     align-items: center;
 }
+.contem-b1{
+    background-color: var(--primeiro);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contem-b2{
+    background-color: var(--segundo);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contem-b3{
+    background-color: var(--terceiro);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contem-b4{
+    background-color: var(--quarto);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.contem-b5{
+    background-color: var(--quinto);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contem-b6{
+    background-color: var(--sexto);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover dos contem */
+.contem:hover {
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-ai:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-ais:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-ac:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: transparent;
+}
+.contem-b1:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-b2:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-b3:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-b4:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-b5:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+.contem-b6:hover{
+    background-image: url(./shrek.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
 footer{
     width: 100%;
     height: 100%;
@@ -399,28 +585,6 @@ footer{
 }
 .column-reverse-wrap-reverse{
     flex-flow: column-reverse wrap-reverse;
-}
-
-/* hover das div */
-.contem:hover {
-    background-image: url(./shrek.png);
-    background-position: center;
-    color: transparent
-}
-.contem-ai:hover{
-    background-image: url(./shrek.png);
-    background-position: center;
-    color: transparent
-}
-.contem-ais:hover{
-    background-image: url(./shrek.png);
-    background-position: center;
-    color: transparent
-}
-.contem-ac:hover{
-    background-image: url(./shrek.png);
-    background-position: center;
-    color: transparent
 }
 
 .secundario-m{

@@ -8,9 +8,24 @@
     <title>Teste flex-box</title>
 </head>
 <body>
-    <header></header>
+    <header id="menu">
+        <section class="menu">
+            <pre><h1>flex-box</h1></pre>
+            <div class="botoes">
+                <pre><h2><a href="#flex-direction">flex-direction</a></h2></pre>
+                <pre><h2><a href="#justify-content">justify-content</a></h2></pre>
+                <pre><h2><a href="#align-items">align-items</a></h2></pre>
+                <pre><h2><a href="#align-content">align-content</a></h2></pre>
+                <pre><h2><a href="#flex-wrap">flex-wrap</a></h2></pre>
+                <pre><h2><a href="#flex-flow">flex-flow</a></h2></pre>
+            </div>
+        </section>
+    </header>
+    <div class="btnSupEsquerdo">
+        <a href="#menu"><button class="btn btn-warning btnCircular btnPrincipal" name="3">^</button></a>
+    </div>
     <div class="primario">
-        <h1 class="titulo">flex-direction</h1>
+        <h1 id="flex-direction" class="titulo">flex-direction</h1>
         <div class="secundario">
             <section>
                 <h2><pre><span class="propriedade">flex-direction</span><span class="ponto">:</span><span class="valor">row</span></pre></h2>
@@ -143,9 +158,9 @@
                 <div class="contem">6</div>
             </div>
         </div>
-        <h1 class="titulo"> justify-content</h1>
+        <h1 id="justify-content" class="titulo">justify-content</h1>
         <div class="secundario">
-            <section>
+            <section >
                 <h2><pre><span class="propriedade">justify-content</span><span class="ponto">:</span><span class="valor">flex-start</span></pre></h2>
                 <p class="descricao">Default value. Items are positioned at the beginning of the container</p>
                 <code>
@@ -317,7 +332,7 @@
                 <div class="contem">6</div>
             </div>
         </div>
-        <h1 class="titulo">align-items</h1>
+        <h1 id="align-items" class="titulo">align-items</h1>
         <div class="secundario">
             <section>
                 <h2><pre><span class="propriedade">align-items</span><span class="ponto">:</span><span class="valor">normal</span></pre></h2>
@@ -494,12 +509,12 @@
                 </code>
             </section>
             <div class="terciario align-items-baseline">
-                <div class="contem-ai">1</div>
-                <div class="contem-ai">2</div>
-                <div class="contem-ai">3</div>
-                <div class="contem-ai">4</div>
-                <div class="contem-ai">5</div>
-                <div class="contem-ai">6</div>
+                <div class="contem-b1">1</div>
+                <div class="contem-b2">2</div>
+                <div class="contem-b3">3</div>
+                <div class="contem-b4">4</div>
+                <div class="contem-b5">5</div>
+                <div class="contem-b6">6</div>
             </div>
         </div>
         <div class="secundario">
@@ -548,7 +563,7 @@
                 <div class="contem-ai">6</div>
             </div>
         </div>
-        <h1 class="titulo">align-content</h1>
+        <h1 id="align-content" class="titulo">align-content</h1>
         <div class="secundario">
             <section>
                 <h2><pre><span class="propriedade">align-content</span><span class="ponto">:</span><span class="valor">stretch</span></pre></h2>
@@ -740,7 +755,7 @@
                 <div class="contem-ac">5</div>
             </div>
         </div>
-        <h1 class="titulo">flex-wrap</h1>
+        <h1 id="flex-wrap" class="titulo">flex-wrap</h1>
         <div class="secundario">
             <section>
                 <h2><pre><span class="propriedade">flex-wrap</span><span class="ponto">:</span><span class="valor">nowrap</span></pre></h2>
@@ -866,7 +881,7 @@
                 <div class="contem">8</div>
             </div>
         </div>
-        <h1 class="titulo">flex-flow</h1>
+        <h1 id="flex-flow" class="titulo">flex-flow</h1>
         <div class="secundario">
             <section>
                 <h2><pre><span class="propriedade">flex-flow</span><span class="ponto">:</span><span class="valor">row nowrap</span></pre></h2>
